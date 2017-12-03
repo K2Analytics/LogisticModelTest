@@ -63,7 +63,7 @@ Rrate <- function(df, target, var)
     cnt_non_resp = sum(Target == 0)
   ) ,
   by=deciles][order(deciles)]
-  RRate$rrate<-RRate$cnt_resp*100/RRate$cnt
+  RRate$rrate<-round(RRate$cnt_resp*100/RRate$cnt,2)
   RRate
 }
 
