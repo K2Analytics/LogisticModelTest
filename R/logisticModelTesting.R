@@ -132,13 +132,13 @@ ROTable <- function(df, target, probability)
     cnt_non_resp = sum(Target == 0)
   ) ,
   by = deciles][order(-deciles)]
-  rank$RRate <- rank$cnt_resp / rank$cnt ## computing response rate
+  rank$RRate <- round(rank$cnt_resp / rank$cnt,4) ## computing response rate
   rank$cum_resp <- cumsum(rank$cnt_resp) ## computing cum responders
   rank$cum_non_resp <-
     cumsum(rank$cnt_non_resp) ## computing cum non-responders
-  rank$cum_rel_resp <- rank$cum_resp / sum(rank$cnt_resp)
+  rank$cum_rel_resp <- round(rank$cum_resp / sum(rank$cnt_resp),4)
 
-  rank$cum_rel_non_resp <- rank$cum_non_resp / sum(rank$cnt_non_resp)
+  rank$cum_rel_non_resp <-round( rank$cum_non_resp / sum(rank$cnt_non_resp),4)
 
   rank$ks <- rank$cum_rel_resp - rank$cum_rel_non_resp
   ## KS
