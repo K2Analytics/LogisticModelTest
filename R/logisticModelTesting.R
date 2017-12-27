@@ -140,7 +140,12 @@ ROTable <- function(df, target, probability)
 
   rank$cum_rel_non_resp <-round( rank$cum_non_resp / sum(rank$cnt_non_resp),4)
 
-  rank$ks <- rank$cum_rel_resp - rank$cum_rel_non_resp
+  rank$ks <- round(rank$cum_rel_resp - rank$cum_rel_non_resp,4)
+  
+  rank$RRate <- percent(rank$RRate)
+  rank$cum_rel_resp <- percent(rank$cum_rel_resp)
+  rank$cum_rel_non_resp <- percent(rank$cum_rel_non_resp)
+  
   ## KS
   rank ## display Rank Ordering Table
 }
