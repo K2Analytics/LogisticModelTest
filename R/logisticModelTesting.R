@@ -151,7 +151,7 @@ ROTable <- function(df, target, probability)
   rank ## display Rank Ordering Table
 }
 
-#' Ks statistics & AUCC curve
+#' Ks statistics & AUC curve
 #'
 #' Plot AUCC curve and calculate KS,AUC statistics.
 #' @author Rajesh Jakhotia
