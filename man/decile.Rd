@@ -21,5 +21,4 @@ y
 x<-decile(y)
 table(x)
 x
-
 }

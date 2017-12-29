@@ -24,10 +24,7 @@ Produce graph for the variable
 \examples{
 data(CTDF)
 View(CTDF)
-col_list="SCR"
-for (i in 1 : length(col_list)) {
-Visualization(df = CTDF,target = "TARGET",var = col_list[i])
-}
+fn_visualize(df = CTDF,target = "TARGET",var = "SCR")
 }
 \author{
 Rajesh Jakhotia
