@@ -5,8 +5,8 @@ Authors@R: person("Rajesh Jakhotia", "Jishnu S", email = "ar.jakhotia@k2analytic
 Maintainer@R: person("Rajesh Jakhotia", "Jishnu S", email = "ar.jakhotia@k2analytics.co.in", role = c("aut", "cre"))
 Company:K2 Analytics Finishing School Pvt. Ltd
 Description: It will take the data frame in to 10 parts or less than 10 and it will show the pattern of target variable in selected variable. Also included some power functions
-Depends: R (>= 3.3.0),aod,car,data.table,ROCR,scales,sqldf,ineq
-Imports:data.table,scales,aod,car,ROCR,sqldf,ineq
+Depends: R (>= 3.3.0),aod,car,devtools,data.table,ROCR,scales,sqldf,ineq
+Imports:data.table,scales,devtools,aod,car,ROCR,sqldf,ineq
 License: MIT
 LazyData: true
 RoxygenNote: 6.0.1
